@@ -1,0 +1,75 @@
+import UIKit
+
+class EscapeRoomViewController: UIViewController {
+    
+    // Outlets for UI elements
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var hintLabel: UILabel!
+    @IBOutlet weak var cluesLabel: UILabel!
+    @IBOutlet weak var escapeButton: UIButton!
+    
+    // Variables for game logic
+    var timer: Timer?
+    var timeLeft: Int = 60
+    var cluesFound: Int = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Start the timer
+        startTimer()
+    }
+    
+    // Helper function to start the timer
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+    }
+    
+    // Helper function to update the timer label
+    @objc func updateTimer() {
+        timeLeft -= 1
+        timerLabel.text = "Time left: \(timeLeft)"
+        
+        // End the game if time runs out
+        if timeLeft == 0 {
+            endGame(message: "Time's up! Game over.")
+        }
+    }
+    
+    // Helper function to end the game
+    func endGame(message: String) {
+        timer?.invalidate()
+        timer = nil
+        hintLabel.text = message
+        cluesLabel.isHidden = true
+        escapeButton.isHidden = true
+    }
+    
+    // Action for the escape button
+    @IBAction func escapeButtonTapped(_ sender: UIButton) {
+        if cluesFound == 3 {
+            endGame(message: "Congratulations! You escaped the room!")
+        } else {
+            hintLabel.text = "You need to find all the clues before you can escape."
+        }
+    }
+    
+    // Actions for the clue buttons
+    @IBAction func clue1ButtonTapped(_ sender: UIButton) {
+        cluesFound += 1
+        cluesLabel.text = "Clues found: \(cluesFound)/3"
+        sender.isHidden = true
+    }
+    
+    @IBAction func clue2ButtonTapped(_ sender: UIButton) {
+        cluesFound += 1
+        cluesLabel.text = "Clues found: \(cluesFound)/3"
+        sender.isHidden = true
+    }
+    
+    @IBAction func clue3ButtonTapped(_ sender: UIButton) {
+        cluesFound += 1
+        cluesLabel.text = "Clues found: \(cluesFound)/3"
+        sender.isHidden = true
+    }
+}
