@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lofi Drift - 24/7 chill beats to study, relax, and vibe to. Join our community for endless lofi and chillhop streams.">
+    <meta name="keywords" content="lofi, chill beats, study music, relaxing music, 24/7 stream, YouTube lofi">
+    <meta property="og:title" content="Lofi Drift - 24/7 Chill Beats Stream">
+    <meta property="og:description" content="Your companion for deep focus, late-night vibes, and stress-free studying.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Lofi Drift - 24/7 Chill Beats to Study, Relax & Vibe</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-music"></i>
+                <span>Lofi Drift</span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#support">Support</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+                <div class="floating-circle circle-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Lofi Drift</span>
+                    </h1>
+                    <p class="hero-subtitle">24/7 chill beats to study, relax, and vibe to</p>
+                    <div class="hero-buttons">
+                        <a href="https://youtube.com/@lofidrift" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-youtube"></i>
+                            Subscribe on YouTube
+                        </a>
+                        <button class="btn btn-secondary" id="playToggle">
+                            <i class="fas fa-play"></i>
+                            Listen Now
+                        </button>
+                    </div>
+                    <div class="live-indicator">
+                        <div class="live-dot"></div>
+                        <span>Live Now</span>
+                    </div>
+                </div>
+                
+                <div class="hero-player">
+                    <div class="player-container">
+                        <iframe 
+                            id="youtube-player"
+                            src="https://www.youtube.com/embed/jfKfPfyJRdk?autoplay=0&mute=1&controls=1&loop=1&playlist=jfKfPfyJRdk"
+                            title="Lofi Drift - 24/7 Stream"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="player-overlay">
+                            <div class="now-playing">
+                                <div class="track-info">
+                                    <div class="track-title">Now Playing</div>
+                                    <div class="track-name">Track info will appear here soon...</div>
+                                </div>
+                                <div class="visualizer">
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Lofi Drift</h2>
+                    <p>Lofi Drift is your companion for deep focus, late-night vibes, and stress-free studying. We stream 24/7 lofi and chillhop beats with a cozy aesthetic, curated from royalty-free sources.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Live Stream</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Tracks</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Good Vibes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="avatar-container">
+                        <div class="avatar">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div class="avatar-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>Weekly Drift Schedule</h2>
+            <p class="section-subtitle">Each day brings a different vibe to accompany your journey</p>
+            
+            <div class="schedule-grid">
+                <div class="schedule-card">
+                    <div class="day">Monday</div>
+                    <div class="theme">Focus Beats</div>
+                    <div class="description">Deep concentration tracks</div>
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                </div>
+                
+                <div class="schedule-card">
+                    <div class="day">Tuesday</div>
+                    <div class="theme">Chill Anime Loops</div>
+                    <div class="description">Nostalgic anime-inspired vibes</div>
+                    <div class="icon"><i class="fas fa-star"></i></div>
+                </div>
+                
+                <div class="schedule-card">
+                    <div class="day">Wednesday</div>
+                    <div class="theme">Rainy Day Vibes</div>
+                    <div class="description">Cozy indoor atmosphere</div>
+                    <div class="icon"><i class="fas fa-cloud-rain"></i></div>
+                </div>
+                
+                <div class="schedule-card">
+                    <div class="day">Thursday</div>
+                    <div class="theme">Synth Chill</div>
+                    <div class="description">Retro synthwave meets lofi</div>
+                    <div class="icon"><i class="fas fa-wave-square"></i></div>
+                </div>
+                
+                <div class="schedule-card">
+                    <div class="day">Friday</div>
+                    <div class="theme">Night Drive</div>
+                    <div class="description">Late night cruising beats</div>
+                    <div class="icon"><i class="fas fa-car"></i></div>
+                </div>
+                
+                <div class="schedule-card">
+                    <div class="day">Saturday</div>
+                    <div class="theme">Cozy Café Lofi</div>
+                    <div class="description">Coffee shop ambiance</div>
+                    <div class="icon"><i class="fas fa-coffee"></i></div>
+                </div>
+                
+                <div class="schedule-card">
+                    <div class="day">Sunday</div>
+                    <div class="theme">Nature & Ambient</div>
+                    <div class="description">Peaceful natural sounds</div>
+                    <div class="icon"><i class="fas fa-leaf"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="support">
+        <div class="container">
+            <div class="support-content">
+                <h2>Support the Drift</h2>
+                <p>Support the stream and unlock exclusive lofi tracks, wallpapers, and behind-the-scenes updates.</p>
+                
+                <div class="donation-buttons">
+                    <a href="https://patreon.com/lofidrift" target="_blank" class="donation-btn patreon">
+                        <i class="fab fa-patreon"></i>
+                        <span>Patreon</span>
+                        <small>Monthly support</small>
+                    </a>
+                    
+                    <a href="https://ko-fi.com/lofidrift" target="_blank" class="donation-btn kofi">
+                        <i class="fas fa-heart"></i>
+                        <span>Ko-fi</span>
+                        <small>One-time tip</small>
+                    </a>
+                    
+                    <a href="https://buymeacoffee.com/lofidrift" target="_blank" class="donation-btn coffee">
+                        <i class="fas fa-coffee"></i>
+                        <span>Buy Me A Coffee</span>
+                        <small>Coffee fuel</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join the Drift List</h2>
+                <p>Get notified about new features, exclusive tracks, and community updates</p>
+                
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            Subscribe for Updates
+                        </button>
+                    </div>
+                    <p class="form-disclaimer">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-music"></i>
+                        <span>Lofi Drift</span>
+                    </div>
+                    <p>24/7 chill beats for your journey</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="social-links">
+                        <a href="https://youtube.com/@lofidrift" target="_blank" class="social-link youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com/lofidrift" target="_blank" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/lofidrift" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://discord.gg/lofidrift" target="_blank" class="social-link discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>All music is copyright-safe and used with permission or created in-house. Lofi Drift © 2025.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
